@@ -1,0 +1,19 @@
+.video-main {
+  border: 0.6vh solid black;
+  border-radius: 3.7vh;
+  width: 100%;
+  /* display: flex; */
+  /* margin: auto; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-top: 16.5vh; */
+}
+
+.title-main {
+  color: black;
+  font-family: "Atma", cursive;
+}
+
+.button-main {
+  width: 35vh;
+}
