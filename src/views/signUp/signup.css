@@ -1,0 +1,46 @@
+.container-signup {
+  border: 0.7vh solid black;
+  border-radius: 3.3vh;
+  width: 150vh;
+  margin-left: 28.1vh;
+  margin-right: 1.6vh;
+  margin-top: 9vh;
+  border-radius: 3.3;
+  position: relative;
+  height: 72.4vh;
+  background-color: rgba(255, 255, 255);
+}
+
+.title-signup {
+  font-family: "Atma", cursive;
+  text-align: center;
+}
+
+.box-signup {
+  width: 25%;
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.boxs-signup {
+  width: 35%;
+  margin-top: 5%;
+  margin-bottom: 1.5vh;
+  border-radius: 3vh;
+  font-weight: bold;
+}
+
+.buttonBig-signup {
+  width: 100%;
+  border: 0.3vh solid black;
+  border-radius: 1.5vh;
+  height: 19vh;
+  margin-top: 1%;
+  font-size: 50px;
+  font-family: "Atma", cursive;
+  color: black;
+}
+
+.boxBotton-signup {
+  border-radius: 50.75vh;
+}
