@@ -18,6 +18,17 @@ export const appRoutes = {
   SITE_MAP: "/site-map",
   ABOUT: "/about",
   UPLOAD_USERS: "/upload-users",
+  BASIC: "/basic",
+  INTERMEDIATE: "/intermediate",
+  ADVANCED: "/advanced",
+  VOCABULARY: "/vocabulary",
+  CHOOSE: "/choose",
+  GRAMMAR: "/grammar",
+  MATCH: "/match",
+  INTRO_CHOOSE: "/intro-choose",
+  INTRO_VOCABULARY: "/intro-vocabulary",
+  INTRO_GRAMMAR: "/intro-grammar",
+  INTRO_MATCH: "/intro-match",
 };
 
 export const appNames = {
