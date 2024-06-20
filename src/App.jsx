@@ -1,7 +1,7 @@
 import AppLayout from "./layout/AppLayout";
-import RoutesComponent from "./routes/RoutesComponent";
 import "./App.css";
 import { LoginContextProvider } from "./context/LoginContext";
+import RoutesComponent from "./views/advancedGames/RoutesComponent";
 
 function App() {
   return (
