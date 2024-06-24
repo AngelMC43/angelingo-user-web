@@ -12,10 +12,10 @@ export default function Footer() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(4, 33% 30% 22% 15%)",
-          background: "black",
+          gridTemplateColumns: "repeat(4, 35% 30% 23% 12%)",
+          background: "#000",
           width: "100%",
-          height: "22vh",
+          height: "17vh",
           marginTop: "3%",
         }}
       >
@@ -26,7 +26,7 @@ export default function Footer() {
           }}
         >
           <div className="col columnF-footer">
-            <h5 className="titleMain-footer">AngeLingo</h5>
+            <h5 className="titleMain-footer">Aprende jugando</h5>
             <p className="color-footer">
               Aprender inglés con juegos interactivos es la forma más fácil de
               adquirir nuevos conocimientos. Podrás elegir varios niveles según
@@ -100,12 +100,12 @@ export default function Footer() {
             <br />
           </ul>
         </div>
-        <div style={{ alignContent: "center" }}>
+        <div style={{ alignContent: "center", paddingLeft: "10%" }}>
           <img
             src={letterLogo}
             alt=""
             style={{
-              width: "90%",
+              width: "60%",
             }}
           />
         </div>

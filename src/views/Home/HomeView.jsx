@@ -40,19 +40,32 @@ export default function HomeView() {
       <div
         className="body"
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr )",
+          gridColumn: 3,
         }}
       >
         <div
           style={{
-            width: "20%",
-            paddingTop: "5%",
+            paddingTop: "12%",
+            gridColumn: "2",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            // background: "blue",
           }}
         >
           <Link to={userLogged && "index-menu"}>
-            <video loop autoPlay muted className="video-main">
+            <video
+              loop
+              autoPlay
+              muted
+              style={{
+                border: "0.6vh solid black",
+                borderRadius: "3.7vh",
+                height: "45vh",
+              }}
+            >
               <source src={presentation} type="video/mp4" />
             </video>
           </Link>
