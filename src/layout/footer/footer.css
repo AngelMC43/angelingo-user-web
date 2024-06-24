@@ -10,11 +10,11 @@
 }
 
 .bgSub-footer {
-  background-color: rgb(15, 14, 14);
+  background-color: rgb(32, 31, 31);
   text-align: center;
-  color: #5c5a5a;
-  font-size: 2vh;
-  height: 3.8vh;
+  color: #747272;
+  font-size: 1.6vh;
+  height: 3vh;
 }
 
 .titleMain-footer {

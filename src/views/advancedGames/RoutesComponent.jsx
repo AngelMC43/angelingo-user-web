@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
@@ -110,86 +110,76 @@ import NextCompleted from "../intros/advanced/NextCompleted";
 
 export default function RoutesComponent() {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/*public routes */}
-        <Route path="/" element={<HomeView />} />
-        <Route path="login" element={<LoginView />} />
-        <Route path="signup" element={<SignUpView />} />
-        <Route path="guide" element={<GuideView />} />
-        <Route path="ideas-map" element={<SiteMapView />} />
-        <Route path="contacto" element={<ContactView />} />
-        <Route path="about" element={<AboutView />} />
+    <Routes>
+      {/*public routes */}
+      <Route path="/" element={<HomeView />} />
+      <Route path="login" element={<LoginView />} />
+      <Route path="signup" element={<SignUpView />} />
+      <Route path="guide" element={<GuideView />} />
+      <Route path="ideas-map" element={<SiteMapView />} />
+      <Route path="contacto" element={<ContactView />} />
+      <Route path="about" element={<AboutView />} />
 
-        {/*protected routes */}
-        <Route path="ranking" element={<RankingView />} />
-        <Route path="index-menu" element={<IndexMenuView />} />
-        <Route path="profile" element={<ProfileView />} />
-        <Route path="games" element={<GamesView />} />
-        {/* <Route element={<RequireAuth />}>
+      {/*protected routes */}
+      <Route path="ranking" element={<RankingView />} />
+      <Route path="index-menu" element={<IndexMenuView />} />
+      <Route path="profile" element={<ProfileView />} />
+      <Route path="games" element={<GamesView />} />
+      {/* <Route element={<RequireAuth />}>
             <Route path="upload-user" element={<UploadUser />} />
             <Route path="my-score" element={<MyScore />} /> */}
-        {/* ------------------------GAMES BASIC -------------------------------------------- */}
-        <Route path="games/basic" element={<BasicView />} />
-        <Route path="games/basic/vocabulary" element={<BasicVocabulary />} />
-        <Route path="games/basic/grammar" element={<BasicGrammar />} />
-        <Route path="games/basic/match" element={<BasicMatch />} />
-        <Route path="games/basic/choose" element={<BasicChoose />} />
-        {/* ------------------------INTRO BASIC-------------------------------------------- */}
-        <Route
-          path="games/basic/intro-vocabulary"
-          element={<IntroBasicVocabulary />}
-        />
-        <Route
-          path="games/basic/intro-grammar"
-          element={<IntroBasicGrammar />}
-        />
-        <Route path="games/basic/intro-choose" element={<IntroBasicChoose />} />
-        <Route path="games/basic/intro-match" element={<IntroBasicMatch />} />
+      {/* ------------------------GAMES BASIC -------------------------------------------- */}
+      <Route path="games/basic" element={<BasicView />} />
+      <Route path="games/basic/vocabulary" element={<BasicVocabulary />} />
+      <Route path="games/basic/grammar" element={<BasicGrammar />} />
+      <Route path="games/basic/match" element={<BasicMatch />} />
+      <Route path="games/basic/choose" element={<BasicChoose />} />
+      {/* ------------------------INTRO BASIC-------------------------------------------- */}
+      <Route
+        path="games/basic/intro-vocabulary"
+        element={<IntroBasicVocabulary />}
+      />
+      <Route path="games/basic/intro-grammar" element={<IntroBasicGrammar />} />
+      <Route path="games/basic/intro-choose" element={<IntroBasicChoose />} />
+      <Route path="games/basic/intro-match" element={<IntroBasicMatch />} />
 
-        <Route path="games/next-intermediate" element={<NextIntermediate />} />
-        {/* ------------------------GAMES INTERMEDIATE-------------------------------------------- */}
-        <Route path="games/intermediate" element={<IntermediateView />} />
+      <Route path="games/next-intermediate" element={<NextIntermediate />} />
+      {/* ------------------------GAMES INTERMEDIATE-------------------------------------------- */}
+      <Route path="games/intermediate" element={<IntermediateView />} />
 
-        <Route
-          path="games/intermediate/vocabulary"
-          element={<IntermediateVocabulary />}
-        />
-        <Route
-          path="games/intermediate/grammar"
-          element={<IntermediateGrammar />}
-        />
-        <Route
-          path="games/intermediate/verbs"
-          element={<IntermediateVerbs />}
-        />
+      <Route
+        path="games/intermediate/vocabulary"
+        element={<IntermediateVocabulary />}
+      />
+      <Route
+        path="games/intermediate/grammar"
+        element={<IntermediateGrammar />}
+      />
+      <Route path="games/intermediate/verbs" element={<IntermediateVerbs />} />
 
-        <Route
-          path="games/intermediate/match"
-          element={<IntermediateMatch />}
-        />
-        {/* ------------------------INTRO INTERMEDIATE-------------------------------------------- */}
-        <Route
-          path="games/intermediate/intro-vocabulary"
-          element={<IntroIntermediateVocabulary />}
-        />
+      <Route path="games/intermediate/match" element={<IntermediateMatch />} />
+      {/* ------------------------INTRO INTERMEDIATE-------------------------------------------- */}
+      <Route
+        path="games/intermediate/intro-vocabulary"
+        element={<IntroIntermediateVocabulary />}
+      />
 
-        <Route
-          path="games/intermediate/intro-grammar"
-          element={<IntroIntermediateGrammar />}
-        />
-        <Route
-          path="games/intermediate/intro-verbs"
-          element={<IntroIntermediateVerbs />}
-        />
-        <Route
-          path="games/intermediate/intro-match"
-          element={<IntroIntermediateMatch />}
-        />
+      <Route
+        path="games/intermediate/intro-grammar"
+        element={<IntroIntermediateGrammar />}
+      />
+      <Route
+        path="games/intermediate/intro-verbs"
+        element={<IntroIntermediateVerbs />}
+      />
+      <Route
+        path="games/intermediate/intro-match"
+        element={<IntroIntermediateMatch />}
+      />
 
-        <Route path="games/next-advanced" element={<NextAdvanced />} />
-        {/* ------------------------SCORE INTERMEDIATE-------------------------------------------- */}
-        {/* <Route
+      <Route path="games/next-advanced" element={<NextAdvanced />} />
+      {/* ------------------------SCORE INTERMEDIATE-------------------------------------------- */}
+      {/* <Route
               path="ranking/intermediate-vocabulary"
               element={<ScoreIntVocabulary />}
             />
@@ -212,36 +202,36 @@ export default function RoutesComponent() {
               path="games/basic/next-advanced"
               element={<NextAdvanced />}
             /> */}
-        {/* ------------------------GAMES ADVANCED-------------------------------------------- */}
-        <Route path="games/advanced" element={<AdvancedView />} />
+      {/* ------------------------GAMES ADVANCED-------------------------------------------- */}
+      <Route path="games/advanced" element={<AdvancedView />} />
 
-        <Route
-          path="games/advanced/vocabulary"
-          element={<AdvancedVocabulary />}
-        />
-        <Route path="games/advanced/grammar" element={<AdvancedGrammar />} />
-        <Route path="games/advanced/verbs" element={<AdvancedVerbs />} />
-        <Route path="games/advanced/match" element={<AdvancedMatch />} />
-        {/* ------------------------INTRO ADVANCED-------------------------------------------- */}
-        <Route
-          path="games/advanced/intro-vocabulary"
-          element={<IntroAdvancedVocabulary />}
-        />
-        <Route
-          path="games/advanced/intro-grammar"
-          element={<IntroAdvancedGrammar />}
-        />
-        <Route
-          path="games/advanced/intro-verbs"
-          element={<IntroAdvancedVerbs />}
-        />
-        <Route
-          path="games/advanced/intro-match"
-          element={<IntroAdvancedMatch />}
-        />
-        <Route path="completed" element={<NextCompleted />} />
-        {/* ------------------------SCORE ADVANCED-------------------------------------------- */}
-        {/* <Route
+      <Route
+        path="games/advanced/vocabulary"
+        element={<AdvancedVocabulary />}
+      />
+      <Route path="games/advanced/grammar" element={<AdvancedGrammar />} />
+      <Route path="games/advanced/verbs" element={<AdvancedVerbs />} />
+      <Route path="games/advanced/match" element={<AdvancedMatch />} />
+      {/* ------------------------INTRO ADVANCED-------------------------------------------- */}
+      <Route
+        path="games/advanced/intro-vocabulary"
+        element={<IntroAdvancedVocabulary />}
+      />
+      <Route
+        path="games/advanced/intro-grammar"
+        element={<IntroAdvancedGrammar />}
+      />
+      <Route
+        path="games/advanced/intro-verbs"
+        element={<IntroAdvancedVerbs />}
+      />
+      <Route
+        path="games/advanced/intro-match"
+        element={<IntroAdvancedMatch />}
+      />
+      <Route path="completed" element={<NextCompleted />} />
+      {/* ------------------------SCORE ADVANCED-------------------------------------------- */}
+      {/* <Route
               path="ranking/advanced-vocabulary"
               element={<ScoreAdvVocabulary />}
             />
@@ -252,11 +242,10 @@ export default function RoutesComponent() {
               path="ranking/advanced-grammar"
               element={<ScoreAdvGrammar />}
             /> */}
-        {/* <Route path="ranking/advanced-match" element={<ScoreAdvMatch />} /> */}
-        {/* </Route>
+      {/* <Route path="ranking/advanced-match" element={<ScoreAdvMatch />} /> */}
+      {/* </Route>
         </Route> */}
-      </Routes>
-    </BrowserRouter>
+    </Routes>
   );
   // );
 }
