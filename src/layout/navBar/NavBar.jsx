@@ -34,19 +34,36 @@ export default function Navbar() {
     <>
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-dark"
-        style={{ height: "7vh" }}
+        // style={{ height: "7vh" }}
       >
-        <img src={letterLogo} style={{ width: "6%", marginLeft: "1%" }} />
         <div
-          className="collapse navbar-collapse"
-          id="navbarNavAltMarkup"
           style={{
-            paddingLeft: "2%",
-            display: "flex",
-            justifyContent: "space-between",
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 8% 29.5% 25% 37.5%)",
+            width: "100%",
           }}
         >
-          <div className="navbar-nav">
+          <div
+            style={{
+              display: "grid",
+              placeItems: "center",
+              paddingLeft: "8%",
+              // background: "red",
+            }}
+          >
+            <img src={letterLogo} style={{ width: "80%" }} />
+          </div>
+          {/* <div
+            className="collapse navbar-collapse"
+            id="navbarNavAltMarkup"
+            style={{
+              background: "blue",
+              paddingLeft: "2%",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          > */}
+          <div className="navbar-nav" style={{ paddingLeft: "8%" }}>
             {barElements.map((i, index) => (
               <a
                 key={index}
@@ -61,25 +78,44 @@ export default function Navbar() {
               </a>
             ))}
           </div>
-          <img src={logoWhite} style={{ width: "5%", marginLeft: "-19%" }} />
+          <div
+            style={{
+              display: "grid",
+              placeItems: "center",
+              // background: "red",
+            }}
+          >
+            <img
+              src={logoWhite}
+              style={{
+                height: "7vh",
+                // background: "red",
+                alignContent: "center",
+              }}
+            />
+          </div>
           <a
             // onClick={() => logout()}
             style={{
-              width: "5%",
               height: "9vh",
+              // alignContent: "center",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "flex-end",
               alignItems: "center",
+              paddingRight: "2%",
+              // background: "green",
             }}
           >
             <img
               src={logoutImg}
               style={{
-                width: "40%",
+                // width: "30%",
+                height: "40%",
               }}
             />
           </a>
         </div>
+        {/* </div> */}
       </nav>
       {/* <main className="App"></main> */}
     </>
