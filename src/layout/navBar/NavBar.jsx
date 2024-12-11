@@ -31,7 +31,7 @@ export default function Navbar() {
   //   const location = useLocation();
 
   return (
-    <>
+    <div style={{ height: "7vh" }}>
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-dark"
         style={{ height: "7vh" }}
@@ -82,6 +82,6 @@ export default function Navbar() {
         </div>
       </nav>
       {/* <main className="App"></main> */}
-    </>
+    </div>
   );
 }

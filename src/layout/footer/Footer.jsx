@@ -15,7 +15,7 @@ export default function Footer() {
           gridTemplateColumns: "repeat(4, 33% 30% 22% 15%)",
           background: "black",
           width: "100%",
-          height: "22vh",
+          height: "20vh",
           marginTop: "3%",
         }}
       >

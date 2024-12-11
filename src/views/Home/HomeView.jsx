@@ -48,7 +48,7 @@ export default function HomeView() {
         <div
           style={{
             width: "20%",
-            paddingTop: "5%",
+            paddingTop: "3%",
           }}
         >
           <Link to={userLogged && "index-menu"}>

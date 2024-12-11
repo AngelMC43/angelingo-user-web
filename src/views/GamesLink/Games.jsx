@@ -7,7 +7,9 @@ import "./gamesLink.css";
 export default function Games() {
   return (
     <div>
-      <h1 className="title-link">Games</h1>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <h1 className="title-link">Games</h1>
+      </div>
       <div className="container-link">
         <Link to="basic">
           <video loop autoPlay muted className="video-main">
@@ -17,12 +19,12 @@ export default function Games() {
         <Link to="intermediate">
           <video loop autoPlay muted className="video-main">
             <source src={intermediate} type="video/mp4" />
-          </video>{" "}
+          </video>
         </Link>
         <Link to="advanced">
           <video loop autoPlay muted className="video-main">
             <source src={advanced} type="video/mp4" />
-          </video>{" "}
+          </video>
         </Link>
       </div>
     </div>
